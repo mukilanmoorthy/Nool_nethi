@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Sidebar */
+.sidebar {
+    width: 25%;
+    background-color: #3b5998;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.sidebar .search-bar {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.sidebar .functions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar .function-btn {
+    display: block;
+    padding: 10px;
+    background-color: #4b72c7;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.sidebar .function-btn:hover {
+    background-color: #324d99;
+}
+
+.sidebar .logout {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Right Content */
+.content {
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content-header {
+    margin-bottom: 20px;
+}
+
+.content-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.search-book-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #007BFF;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* seach history */
+
+#output{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.book-card{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.book-card img.book-image{
+    width: 120px;
+    height: 180px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.book-card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.book-card a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Specific Styling (Max Width 600px) */
+@media (max-width: 600px) {
+    .book-card {
+        width: 100%; /* Full width on mobile devices */
+        padding: 10px;
+    }
+
+    .book-card img.book-image {
+        width: 100px; /* Smaller image size for mobile */
+        height: 150px;
+    }
+
+    .book-card h3 {
+        font-size: 14px; /* Smaller title */
+    }
+
+    .book-card p {
+        font-size: 11px; /* Smaller description for mobile */
+    }
+
+    .book-card a {
+        font-size: 12px; /* Smaller link for mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+}

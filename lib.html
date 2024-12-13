@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/lib.css">
+    <title>Library Management</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div>
+                <h1>Nool Nidhi</h1>
+                <p>Welcome back to Library Management System. We missed you!</p>
+            </div>
+            <div class="functions">
+                <a href="add.html" class="function-btn">
+                    <span>📚</span> Add Book
+                </a>
+                <a href="search.html" class="function-btn">
+                    <span>🔍</span> Search Books
+                </a>
+                <a href="issue.html" class="function-btn">
+                    <span>✅</span> Issue Book
+                </a>
+                <a href="return.html" class="function-btn">
+                    <span>🔄</span> Return Book
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="content">
+            <div class="content-header">
+                <h2>Home Screen</h2>
+                <div class="profile-img"></div>
+            </div>
+            <div class="table-section">
+                <h3>Recently Added Books</h3>
+                <p class="bookDetailsDisplay"></p>
+                <div class="table-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/lib.js"></script>
+</body>
+</html>

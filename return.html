@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/return.css">
+    <title>Return Book - Library Management System</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Return Book</h1>
+            <p class="subtitle">Process book returns quickly and efficiently</p>
+        </header>
+        
+        <main>
+            <section class="card">
+                <form id="returnBookForm">
+                    <div class="form-group">
+                        <label for="bookId">Book ID:</label>
+                        <input type="text" id="bookId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userId">User ID:</label>
+                        <input type="text" id="userId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="returnDate">Return Date:</label>
+                        <input type="date" id="returnDate" required>
+                    </div>
+                    <button type="submit">Return Book</button>
+                </form>
+            </section>
+        </main>
+
+        <nav class="navigation">
+            <a href="lib.html" class="nav-link">Home</a>
+            <a href="add.html" class="nav-link">Add Book</a>
+            <a href="issue.html" class="nav-link">Issue Book</a>
+        </nav>
+    </div>
+    <script src="js/return.js"></script>
+</body>
+</html>
+

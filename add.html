@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/add.css">
+    <title>Add Book - Library Management System</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Add New Book</h1>
+            <p class="subtitle">Expand your library collection</p>
+        </header>
+        <main>
+            <section class="card">
+                <form id="addBookForm">
+                    <div class="form-group">
+                        <label for="bookname">Book Title:</label>
+                        <input type="text" id="bookname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="authorname">Author Name:</label>
+                        <input type="text" id="authorname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN:</label>
+                        <input type="text" id="isbn" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <input type="text" id="category" required>
+                    </div>
+                    <button type="button" id="add">Add Book</button>
+                </form>
+            </section>
+        </main>
+        <nav class="navigation">
+            <a href="lib.html" class="nav-link">Home</a>
+            <a href="issue.html" class="nav-link">Issue Book</a>
+            <a href="return.html" class="nav-link">Return Book</a>
+        </nav>
+    </div>
+    <script src="/js/bookAdd.js"></script>
+</body>
+</html>
